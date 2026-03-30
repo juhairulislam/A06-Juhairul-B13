@@ -12,7 +12,7 @@
       "Vector & raster editing",
       "Brand kit management",
       "Team collaboration",
-      "Cloud asset library",
+      
       "Export to SVG, PNG, PDF"
     ],
     "icon": "../src/assets/design-tool.png"
@@ -30,8 +30,8 @@
       "KPI dashboard",
       "Team task management",
       "Real-time analytics",
-      "API integrations",
-      "Priority support"
+      "API integrations"
+      
     ],
     "icon": "../src/assets/operation.png"
   },
@@ -78,7 +78,7 @@
     "tag": "New",
     "tagType": "new",
     "features": [
-      "Multi-platform scheduling",
+      
       "AI caption suggestions",
       "Hashtag recommender",
       "Engagement analytics",
@@ -100,9 +100,9 @@
       "SEO keyword integration",
       "Plagiarism checker",
       "Tone & style adjustment",
-      "Export to DOCX & PDF",
-      "50+ writing templates"
+      "Export to DOCX & PDF"
+      
     ],
-    "icon": "../src/assets/writing_2327400_1.png"
+    "icon":"../src/assets/writing_2327400 1.png"
   }
 ]

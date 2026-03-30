@@ -26,7 +26,7 @@ function App() {
    <Rating></Rating>
    <Premium></Premium>
 
-   <Suspense fallback={<div className='flex justify-between items-center'>
+   <Suspense fallback={<div className='flex justify-center items-center w-full '>
     <span className="loading loading-ring loading-xl"></span>
    </div> } 
    >
