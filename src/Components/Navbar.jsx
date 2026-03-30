@@ -4,7 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between items-center p-6'>
+        <div className='flex flex-col md:flex-row justify-between items-center p-6 gap-10 md:gap-1'>
 
             <div className='w-[10px'>
 
@@ -14,7 +14,7 @@ const Navbar = () => {
 
 
 
-            <div className='flex items-center text-[15px] font-medium text gap-4 '>
+            <div className='flex flex-col md:flex-row items-center text-[15px] font-medium text gap-4 '>
                 <p className='hover:bg-zinc-300 cursor-pointer'>Products</p>
                 <p className='hover:bg-zinc-300 cursor-pointer'>Features</p>
                 <p className='hover:bg-zinc-300 cursor-pointer'>Pricing</p>
@@ -26,8 +26,10 @@ const Navbar = () => {
 
             </div>
 
-            <div className='flex items-center gap-5'>
-                < IoCartOutline />
+            <div className='flex  items-center gap-10 md:gap-5'>
+              <div >
+                  < IoCartOutline />
+              </div>
                
                 <p className='cursor-pointer'> Login</p>
                 <button className='cursor-pointer rounded-3xl text-white bg-linear-to-r from-[#4F39F6]  to-[#9514FA] p-2 font-semibold '>Get Started</button>
