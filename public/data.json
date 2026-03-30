@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "name": "Design Studio Pro",
+    "description": "Professional design toolkit with advanced vector tools, templates, and collaborative features for creative teams.",
+    "price": "$29.99",
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "500+ design templates",
+      "Vector & raster editing",
+      "Brand kit management",
+      "Team collaboration",
+      "Cloud asset library",
+      "Export to SVG, PNG, PDF"
+    ],
+    "icon": "../src/assets/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Operations Manager",
+    "description": "All-in-one business operations platform to automate workflows, track KPIs, and streamline team productivity.",
+    "price": "$49.99",
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Workflow automation",
+      "KPI dashboard",
+      "Team task management",
+      "Real-time analytics",
+      "API integrations",
+      "Priority support"
+    ],
+    "icon": "../src/assets/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Builder",
+    "description": "Create stunning professional portfolios with ATS-optimized resumes, custom themes, and shareable profile links.",
+    "price": "$14.99",
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ portfolio templates",
+      "ATS optimization",
+      "Custom domain support",
+      "Export to PDF",
+      "Analytics & views tracking"
+    ],
+    "icon": "../src/assets/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "ShopCart Essentials",
+    "description": "Launch your online store with a powerful shopping cart solution — manage products, orders, and payments effortlessly.",
+    "price": "$24.99",
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Unlimited products",
+      "Multi-payment gateway",
+      "Discount & coupon engine",
+      "Order management",
+      "Mobile-friendly storefront"
+    ],
+    "icon": "../src/assets/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "SocialBoost Scheduler",
+    "description": "Plan, schedule, and analyze your social media content across all major platforms from one smart dashboard.",
+    "price": "$19.99",
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Multi-platform scheduling",
+      "AI caption suggestions",
+      "Hashtag recommender",
+      "Engagement analytics",
+      "Content calendar view",
+      "Team collaboration"
+    ],
+    "icon": "../src/assets/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "ContentWriter AI",
+    "description": "AI-powered writing assistant for blogs, emails, and marketing copy — write faster, rank higher, convert better.",
+    "price": "$149.00",
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "AI blog & article writer",
+      "SEO keyword integration",
+      "Plagiarism checker",
+      "Tone & style adjustment",
+      "Export to DOCX & PDF",
+      "50+ writing templates"
+    ],
+    "icon": "../src/assets/writing_2327400_1.png"
+  }
+]

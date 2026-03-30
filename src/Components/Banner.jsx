@@ -1,7 +1,7 @@
 import React from 'react';
-import img from '../../public/Group 5.png'
-import img2 from '../../public/Play.png'
-import banner from '../../public/banner.png'
+import img from '../assets/Group 5.png'
+import img2 from '../assets/Play.png'
+import banner from '../assets/banner.png'
 
 const Banner = () => {
     return (
