@@ -1,16 +1,72 @@
-# React + Vite
+# 🛒 Digital Tools Buying Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern React-based digital tools shopping interface with dynamic cart functionality and clean UI design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 📖 About The Project
 
-## React Compiler
+**Digital Tools Buying Website** is a clean and interactive e‑commerce style interface built using React. Users can browse digital tools, add them to cart, remove items, and proceed to checkout with real‑time updates and smooth user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project focuses on building **dynamic UI**, **state management**, and **user interaction handling** using modern React practices.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 🛠️ Technologies Used
+
+* React.js
+* Tailwind CSS, DaisyUI
+* JavaScript (ES6+)
+* React-Toastify (NPM Package)
+* JSON (for product data)
+
+
+---
+
+
+# 🚀 Features
+
+### 1. 🛍️ Dynamic Product & Cart Toggle
+
+* Two buttons at the center of the section
+* **Product Button** → Shows Product Section (Default Visible)
+* **Cart Button** → Shows Cart Section
+* Cart shows **Empty Message** by default
+
+### 2. 🧾 Smart Cart Functionality
+
+* Add products to cart
+* Remove products individually
+* Total price calculation of selected products
+* Proceed to checkout clears all cart items
+
+### 3. 🔔 Toast Notification System
+
+* Add to Cart alert
+* Remove Product alert
+* Checkout confirmation alert
+* Implemented using **React Toastify**
+
+
+
+---
+
+
+# 🔗 Live Demo
+
+```
+Live Link: a06-juhairul-b13.netlify.app
+```
+
+---
+
+
+# 👨‍💻 Author
+
+**Juhairul Islam**
+Frontend Developer | React Learner | UI Enthusiast
+
+---
+
+
+>
