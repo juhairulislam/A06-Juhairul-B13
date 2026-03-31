@@ -35,7 +35,7 @@ const Banner = () => {
             {/* part-2 */}
 
             <div className=''>
-                <img className='object-cover h-100 w-full md:w-[110%]' src={banner} alt="Banner Image" />
+                <img className='object-cover h-100 w-[92%] md:w-[110%] mx-auto ' src={banner} alt="Banner Image" />
 
             </div>
 
