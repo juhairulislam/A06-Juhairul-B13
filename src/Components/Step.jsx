@@ -7,8 +7,8 @@ const Step = () => {
     return (
         <div className='bg-zinc-100 mt-15 rounded p-10 md:p-25'>
             <div className='text-center  '>
-                <h1 className='text-3xl font-extrabold my-4 text-[#101727]'>Get Started in 3 Steps</h1>
-                <p className='text-[13px] text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
+                <h1 className='text-2xl md:text-3xl font-extrabold my-4 text-[#101727]'>Get Started in 3 Steps</h1>
+                <p className='text-[11px] md:text-[13px] text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
             </div>
 
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4  mt-10 w-full'>

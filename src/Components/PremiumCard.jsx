@@ -4,7 +4,7 @@ import vector from '../assets/Vector.png'
 
 const PremiumCard = ({data}) => {
     return (
-       <div className=' shadow rounded-xl w-85 p-5 mb-5 hover:shadow-2xl'>
+       <div className=' shadow rounded-xl  p-2 md:p-5 mb-5 hover:shadow-2xl'>
 
                    <div className='flex justify-end '>
                      <button className={`px-3 py-1.5 text-[11px] rounded-2xl ${data.tag === 'Best Seller' ? 'bg-[#FEF3C6] text-[#BB4D00]' : data.tag === 'New' ? 'bg-[#DBFCE7] text-[#0A883E]' : 'bg-[#E1E7FF] text-[#9514FA]'
