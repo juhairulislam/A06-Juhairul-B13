@@ -28,8 +28,8 @@ const Navbar = ({carts}) => {
 
             <div className='flex  items-center gap-10 md:gap-5'>
               <div className='relative'>
-                <span className='bg-red-600 rounded-full text-white text-[10px] absolute left-2 -top-2 w-4 text-center cursor-pointer'>{carts.length}</span>
-                  <span className='cursor-pointer'><IoCartOutline /></span>
+{carts.length !== 0 &&                <span className='bg-red-600 rounded-full text-white text-[10px] absolute left-2 -top-2 w-4 text-center cursor-pointer'>{carts.length}</span>
+}                  <span className='cursor-pointer'><IoCartOutline /></span>
               </div>
                
                 <p className='cursor-pointer'> Login</p>

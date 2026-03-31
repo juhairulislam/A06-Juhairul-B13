@@ -42,7 +42,7 @@ function App() {
       </div>}
       >
 
-        {activeTab === true ? <Products promise={promise} carts={carts} setCarts={setCarts}></Products> : carts.length === 0? <BlankCart></BlankCart>:<Cart carts={carts} setCarts={setCarts} promise={promise}></Cart>}
+        {activeTab === true ? <Products promise={promise} carts={carts} setCarts={setCarts}></Products> : carts.length === 0? <BlankCart></BlankCart>:<Cart carts={carts} setCarts={setCarts} ></Cart>}
 
 
       </Suspense>

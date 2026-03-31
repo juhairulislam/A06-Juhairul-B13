@@ -1,12 +1,23 @@
 import React, { use } from 'react';
 
-const Cart = ({ promise, carts,setCarts }) => {
+const Cart = ({carts,setCarts }) => {
 
-    const allData = use(promise);
+
+    const totalPrice = carts.reduce((sum,item) => sum+ Number(item.price),0) ;
+    // console.log(totalPrice)
+
+    // const allData = use(promise);
 
     const blankCart=()=>{
 
         setCarts([])
+    }
+
+    const deleteCart = (cart) =>{
+
+        const removeCart = carts.filter(car => car.id !== cart.id);
+
+        setCarts(removeCart) ;
     }
 
 
@@ -37,7 +48,7 @@ const Cart = ({ promise, carts,setCarts }) => {
                         </div>
 
                         <div className='flex items-center'>
-                            <h2 className='text-[12px] md:text-[14px] text-red-400 font-semibold'>Remove</h2>
+                            <h2 onClick={() => deleteCart(cart)} className='text-[12px] md:text-[14px] text-red-400 font-semibold cursor-pointer'>Remove</h2>
                         </div>
                     </div>
 
@@ -51,7 +62,7 @@ const Cart = ({ promise, carts,setCarts }) => {
 
             <div className='flex justify-between p-4'>
                 <h1 className='text-xl font-medium'>Total</h1>
-                <p className='text-xl font-medium'>$</p>
+                <p className='text-xl font-bold'>$ {totalPrice}</p>
             </div>
 
             <div className='p-4'>
