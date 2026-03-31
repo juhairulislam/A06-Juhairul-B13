@@ -9,12 +9,12 @@ const Footer = () => {
         <div className='bg-black p-10 md:pt-25 md:px-25 text-white'>
 
            {/* five item in footer */}
-           <div className='grid md:grid-cols-1 lg:grid-cols-5 gap-10 text-center md:text-left'>
+           <div className='grid md:grid-cols-1 lg:grid-cols-5 gap-10 text-center '>
 
 {/* footer 1 */}
             <div className='space-y-4'>
-                <h1 className='text-3xl font-bold'>DigiTools</h1>
-                <p className='text-[12px] text-[#ffffffa0]'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
+                <h1 className='text-3xl text-left font-bold'>DigiTools</h1>
+                <p className='text-[12px] text-left text-[#ffffffa0]'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
             </div>
 
 
@@ -53,8 +53,8 @@ const Footer = () => {
             {/* footer 5 */}
 
             <div>
-                <p className='text-xl mb-4'>Social Links</p>
-                <div className='flex gap-4 justify-center  md:justify-start'>
+                <p className='text-2xl  mb-4'>Social Links</p>
+                <div className='flex gap-4 justify-center'>
                     <p className=' rounded-full border border-white p-2'><FaInstagram></FaInstagram></p>
                    <p className='rounded-full border border-white p-2'> <FaFacebook></FaFacebook></p>
                    <p className='rounded-full border border-white p-2'> <CiTwitter></CiTwitter></p>
