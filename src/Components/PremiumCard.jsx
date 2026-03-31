@@ -15,7 +15,7 @@ const PremiumCard = ({data,carts, setCarts}) => {
         const isDubble = carts.find(item => item.id === data.id ) ;
 
         if(isDubble){
-            toast.error('Item Already Added !') ;
+            toast.error('Item Already Added!') ;
             return ;
         }
         setCarts([...carts,data]);
