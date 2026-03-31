@@ -9,6 +9,7 @@ import { Suspense } from 'react';
 import './App.css'
 import Step from './Components/Step'
 import Pricing from './Components/Pricing'
+import Footer from './Components/Footer'
 
 
 const fetchingData = async() => {
@@ -36,6 +37,7 @@ function App() {
 
    <Step></Step>
    <Pricing></Pricing>
+   <Footer></Footer>
 
     </>
   )
