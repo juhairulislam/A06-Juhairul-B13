@@ -13,8 +13,8 @@ const Footer = () => {
 
 {/* footer 1 */}
             <div className='space-y-4'>
-                <h1 className='text-3xl text-left font-bold'>DigiTools</h1>
-                <p className='text-[12px] text-left text-[#ffffffa0]'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
+                <h1 className='text-3xl text-center md:text-left font-bold'>DigiTools</h1>
+                <p className='text-[12px] text-center md:text-left text-[#ffffffa0]'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
             </div>
 
 

@@ -5,7 +5,7 @@ import banner from '../assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className='p-10 flex justify-between flex-col md:flex-row'>
+        <div className='md:p-10 flex gap-2 md:gap-45 flex-col md:flex-row mx-2 md:ml-15'>
 
 
             {/* part-1 */}
@@ -34,8 +34,8 @@ const Banner = () => {
 
             {/* part-2 */}
 
-            <div className='mx-auto md:mx-0'>
-                <img className='object-cover h-100 w-full' src={banner} alt="Banner Image" />
+            <div className=''>
+                <img className='object-cover h-100 w-full md:w-[110%]' src={banner} alt="Banner Image" />
 
             </div>
 
