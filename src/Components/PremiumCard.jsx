@@ -11,6 +11,13 @@ const PremiumCard = ({data,carts, setCarts}) => {
     const clickBuy=()=>{
 
         setIsBuy(false);
+
+        const isDubble = carts.find(item => item.id === data.id ) ;
+
+        if(isDubble){
+            toast.error('Item Already Added !') ;
+            return ;
+        }
         setCarts([...carts,data]);
         toast.success(`${data.name} Add Successfully`)
        
