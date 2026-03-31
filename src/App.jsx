@@ -13,6 +13,7 @@ import Step from './Components/Step'
 import Pricing from './Components/Pricing'
 import Footer from './Components/Footer'
 import Cart from './Components/Cart'
+import BlankCart from './Components/BlankCart'
 
 
 const fetchingData = async () => {
@@ -41,7 +42,7 @@ function App() {
       </div>}
       >
 
-        {activeTab === true ? <Products promise={promise} carts={carts} setCarts={setCarts}></Products> : <Cart carts={carts} setCarts={setCarts} promise={promise}></Cart>}
+        {activeTab === true ? <Products promise={promise} carts={carts} setCarts={setCarts}></Products> : carts.length === 0? <BlankCart></BlankCart>:<Cart carts={carts} setCarts={setCarts} promise={promise}></Cart>}
 
 
       </Suspense>
