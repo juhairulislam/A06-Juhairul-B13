@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiH1 } from 'react-icons/hi2';
 import vector from '../assets/Vector.png'
+import {  toast } from 'react-toastify';
 
 const PremiumCard = ({data,carts, setCarts}) => {
 
@@ -11,6 +12,7 @@ const PremiumCard = ({data,carts, setCarts}) => {
 
         setIsBuy(false);
         setCarts([...carts,data]);
+        toast.success(`${data.name} Add Successfully`)
        
     }
 

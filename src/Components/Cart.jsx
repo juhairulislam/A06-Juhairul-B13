@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import {  toast } from 'react-toastify';
 
 const Cart = ({carts,setCarts }) => {
 
@@ -11,6 +12,7 @@ const Cart = ({carts,setCarts }) => {
     const blankCart=()=>{
 
         setCarts([])
+        toast.success("Proceed Successful!")
     }
 
     const deleteCart = (cart) =>{
@@ -18,6 +20,9 @@ const Cart = ({carts,setCarts }) => {
         const removeCart = carts.filter(car => car.id !== cart.id);
 
         setCarts(removeCart) ;
+        toast.success(`${cart.name} Remove Successfully`)
+
+       
     }
 
 
