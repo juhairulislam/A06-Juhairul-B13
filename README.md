@@ -64,8 +64,9 @@ The project focuses on building **dynamic UI**, **state management**, and **user
 
 
 # 🔗 Live Demo
-
-Live Link: ```a06-juhairul-b13.netlify.app```
+```
+Live Link: a06-juhairul-b13.netlify.app
+```
 
 
 ---
