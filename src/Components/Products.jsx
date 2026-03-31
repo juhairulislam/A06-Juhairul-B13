@@ -2,7 +2,7 @@ import React, { use } from 'react';
 
 import PremiumCard from './PremiumCard';
 
-const Products = ({ promise }) => {
+const Products = ({promise }) => {
 
     const allData = use(promise);
 

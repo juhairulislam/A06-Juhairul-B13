@@ -5,11 +5,14 @@ import Rating from './Components/Rating'
 import Premium from './Components/Premium'
 import Products from './Components/Products'
 import { Suspense } from 'react';
+import React, { useState } from 'react';
+
 
 import './App.css'
 import Step from './Components/Step'
 import Pricing from './Components/Pricing'
 import Footer from './Components/Footer'
+import Cart from './Components/Cart'
 
 
 const fetchingData = async() => {
@@ -20,19 +23,24 @@ const fetchingData = async() => {
 function App() {
 
   const promise = fetchingData() ;
+      const [activeTab, setActiveTab] = useState(true) ;
+      
 
   return (
     <>
      <Navbar></Navbar>
    <Banner></Banner>
    <Rating></Rating>
-   <Premium></Premium>
+   <Premium activeTab={activeTab} setActiveTab={setActiveTab}></Premium>
 
    <Suspense fallback={<div className='flex justify-center items-center w-full '>
     <span className="loading loading-ring loading-xl"></span>
    </div> } 
    >
-    <Products promise={promise}></Products>
+
+    {activeTab===true?<Products promise={promise} ></Products>:<Cart promise={promise}></Cart>}
+    
+    
    </Suspense>
 
    <Step></Step>
