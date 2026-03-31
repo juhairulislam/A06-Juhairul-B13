@@ -5,12 +5,12 @@ const Cart = ({ promise,carts }) => {
     const allData = use(promise);
     console.log(allData)
     return (
-        <div className='shadow p-4 md:p-15 border border-zinc-200 mx-8'>
+        <div className='shadow rounded-md p-4 md:p-10 border border-zinc-200 mx-8'>
 
-            <h1 className='text-2xl font-bold'>Your Cart</h1>
+            <h1 className='text-2xl font-bold mb-6'>Your Cart</h1>
 
             {
-                carts.map((cart) => <div key={cart.id} className='p-2 md:p-10'>
+                carts.map((cart) => <div key={cart.id} className='p-2 md:p-2'>
 
                     
 
@@ -21,15 +21,15 @@ const Cart = ({ promise,carts }) => {
                          <img className='h-8 md:w-8' src={cart.icon} alt="cart icon" />
 
                        </div>
-                        <div >
-                            <h1 className='text-[15px] md:text-xl font-semibold mb-2'>{cart.name}</h1>
+                        <div className='pt-2'>
+                            <h1 className='text-[13px] md:text-xl font-semibold mb-1'>{cart.name}</h1>
                             <p className='text-[14px] text-[#627382]'>{cart.price}</p>
                         </div>
 
                     </div>
 
                     <div className='flex items-center'>
-                        <h2 className='text-red-400 font-semibold'>Remove</h2>
+                        <h2 className='text-[12px] md:text-[14px] text-red-400 font-semibold'>Remove</h2>
                     </div>
                     </div>
 
