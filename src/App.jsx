@@ -31,10 +31,10 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar  carts={carts}></Navbar>
       <Banner></Banner>
       <Rating></Rating>
-      <Premium activeTab={activeTab} setActiveTab={setActiveTab} ></Premium>
+      <Premium activeTab={activeTab} setActiveTab={setActiveTab} carts={carts}></Premium>
 
       <Suspense fallback={<div className='flex justify-center items-center w-full '>
         <span className="loading loading-ring loading-xl"></span>

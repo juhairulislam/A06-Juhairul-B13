@@ -2,7 +2,7 @@ import React from 'react';
 import { IoCartOutline } from "react-icons/io5";
 
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
     return (
         <div className='flex flex-col md:flex-row justify-between items-center px-10 py-4 gap-10 md:gap-1'>
 
@@ -27,8 +27,9 @@ const Navbar = () => {
             </div>
 
             <div className='flex  items-center gap-10 md:gap-5'>
-              <div >
-                  < IoCartOutline />
+              <div className='relative'>
+                <span className='bg-red-600 rounded-full text-white text-[10px] absolute left-2 -top-2 w-4 text-center cursor-pointer'>{carts.length}</span>
+                  <span className='cursor-pointer'><IoCartOutline /></span>
               </div>
                
                 <p className='cursor-pointer'> Login</p>
