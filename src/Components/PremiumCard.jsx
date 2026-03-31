@@ -23,7 +23,7 @@ const PremiumCard = ({data}) => {
                     <div className='space-y-4'>
                         <h1 className='text-2xl font-semibold'>{data.name}</h1>
                         <p className='text-[11px] md:text-[13px] text-[#627382]'>{data.description}</p>
-                        <p className='text-2xl font-bold mb-4'>{data.price}</p>
+                        <p className='text-2xl font-bold mb-4'>{data.price}<span className='text-[15px] font-normal text-[#627382]'>/{data.period}</span></p>
                         
                     </div >
 
