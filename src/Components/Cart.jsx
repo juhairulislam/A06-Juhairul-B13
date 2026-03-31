@@ -1,9 +1,17 @@
 import React, { use } from 'react';
 
-const Cart = ({ promise, carts }) => {
+const Cart = ({ promise, carts,setCarts }) => {
 
     const allData = use(promise);
-    console.log(allData)
+
+    const blankCart=()=>{
+
+        setCarts([])
+    }
+
+
+
+    // console.log(allData)
     return (
         <div className='shadow rounded-md p-4 md:p-10 border border-zinc-200 mx-8'>
 
@@ -47,7 +55,7 @@ const Cart = ({ promise, carts }) => {
             </div>
 
             <div className='p-4'>
-                <button className='w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] text-white font-semibold p-2 rounded-4xl'>Proceed to Checkout</button>
+                <button onClick={blankCart} className='w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] text-white font-semibold p-2 rounded-4xl'>Proceed to Checkout</button>
             </div>
 
         </div>
