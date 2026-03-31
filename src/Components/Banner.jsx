@@ -5,7 +5,7 @@ import banner from '../assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className='p-6 flex justify-between flex-col md:flex-row'>
+        <div className='p-10 flex justify-between flex-col md:flex-row'>
 
 
             {/* part-1 */}

@@ -7,7 +7,7 @@ import Products from './Components/Products'
 import { Suspense } from 'react';
 
 import './App.css'
-import { use } from 'react'
+import Step from './Components/Step'
 
 
 const fetchingData = async() => {
@@ -32,6 +32,8 @@ function App() {
    >
     <Products promise={promise}></Products>
    </Suspense>
+
+   <Step></Step>
 
     </>
   )

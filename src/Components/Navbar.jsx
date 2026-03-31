@@ -4,7 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <div className='flex flex-col md:flex-row justify-between items-center p-6 gap-10 md:gap-1'>
+        <div className='flex flex-col md:flex-row justify-between items-center p-10 gap-10 md:gap-1'>
 
             <div className='w-[10px'>
 
