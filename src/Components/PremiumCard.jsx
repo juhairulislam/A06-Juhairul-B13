@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HiH1 } from 'react-icons/hi2';
 import vector from '../assets/Vector.png'
 
-const PremiumCard = ({data}) => {
+const PremiumCard = ({data,carts, setCarts}) => {
 
 
     const [isBuy, setIsBuy] = useState(true) ;
@@ -10,8 +10,8 @@ const PremiumCard = ({data}) => {
     const clickBuy=()=>{
 
         setIsBuy(false);
-        
-        
+        setCarts([...carts,data]);
+       
     }
 
   
@@ -46,7 +46,7 @@ const PremiumCard = ({data}) => {
                         </p>)
                     }
 
-                    <button onClick={clickBuy}  className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] h-8 text-white rounded-xl p-5 font-semibold text-[15px] my-4">{isBuy?'Buy Now':'clicked'}</button>
+                    <button onClick={() => clickBuy(data)}  className='btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] h-8 text-white rounded-xl p-5 font-semibold text-[15px] my-4'>Buy Now</button>
 
 
                 </div>

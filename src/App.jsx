@@ -15,37 +15,40 @@ import Footer from './Components/Footer'
 import Cart from './Components/Cart'
 
 
-const fetchingData = async() => {
-  const res = await fetch('/data.json') ;
-  return res.json() ;
+const fetchingData = async () => {
+  const res = await fetch('/data.json');
+  return res.json();
 }
 
 function App() {
 
-  const promise = fetchingData() ;
-      const [activeTab, setActiveTab] = useState(true) ;
-      
+  const promise = fetchingData();
+  const [activeTab, setActiveTab] = useState(true);
+
+  const [carts, setCarts] = useState([]) ;
+   console.log(carts)
+
 
   return (
     <>
-     <Navbar></Navbar>
-   <Banner></Banner>
-   <Rating></Rating>
-   <Premium activeTab={activeTab} setActiveTab={setActiveTab}></Premium>
+      <Navbar></Navbar>
+      <Banner></Banner>
+      <Rating></Rating>
+      <Premium activeTab={activeTab} setActiveTab={setActiveTab} ></Premium>
 
-   <Suspense fallback={<div className='flex justify-center items-center w-full '>
-    <span className="loading loading-ring loading-xl"></span>
-   </div> } 
-   >
+      <Suspense fallback={<div className='flex justify-center items-center w-full '>
+        <span className="loading loading-ring loading-xl"></span>
+      </div>}
+      >
 
-    {activeTab===true?<Products promise={promise} ></Products>:<Cart promise={promise}></Cart>}
-    
-    
-   </Suspense>
+        {activeTab === true ? <Products promise={promise} carts={carts} setCarts={setCarts}></Products> : <Cart carts={carts} promise={promise}></Cart>}
 
-   <Step></Step>
-   <Pricing></Pricing>
-   <Footer></Footer>
+
+      </Suspense>
+
+      <Step></Step>
+      <Pricing></Pricing>
+      <Footer></Footer>
 
     </>
   )
