@@ -8,12 +8,12 @@ const PremiumCard = ({data,carts, setCarts}) => {
 
     const [isBuy, setIsBuy] = useState(true) ;
 
-    const clickBuy=()=>{
+    const clickBuy=(data)=>{
 
-        setIsBuy(false);
-
+        setIsBuy(isBuy === false);
+        
         const isDubble = carts.find(item => item.id === data.id ) ;
-
+        
         if(isDubble){
             toast.error('Item Already Added!') ;
             return ;
@@ -49,8 +49,8 @@ const PremiumCard = ({data,carts, setCarts}) => {
                     </div >
 
                     {
-                        data.features.map((feature,index) => <p key={index} className='flex items-center gap-3'> 
-                            <img src={vector}  /> {feature}
+                        data.features.map((feature) => <p key={feature} className='flex items-center gap-3'> 
+                            <img className='' src={vector}  /> {feature}
 
                         </p>)
                     }

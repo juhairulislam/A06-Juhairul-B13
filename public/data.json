@@ -12,8 +12,8 @@
       "Vector & raster editing",
       "Brand kit management",
       "Team collaboration",
-      
       "Export to SVG, PNG, PDF"
+  
     ],
     "icon": "./design-tool.png"
   },
@@ -84,6 +84,7 @@
       "Engagement analytics",
       "Content calendar view",
       "Team collaboration"
+     
     ],
     "icon": "./social-media.png"
   },
