@@ -2,7 +2,11 @@
 
 > A modern React-based digital tools shopping interface with dynamic cart functionality and clean UI design.
 
+
+
 ---
+
+
 
 # 📖 About The Project
 
@@ -10,7 +14,11 @@
 
 The project focuses on building **dynamic UI**, **state management**, and **user interaction handling** using modern React practices.
 
+
+
 ---
+
+
 
 # 🛠️ Technologies Used
 
@@ -22,6 +30,7 @@ The project focuses on building **dynamic UI**, **state management**, and **user
 
 
 ---
+
 
 
 # 🚀 Features
@@ -52,21 +61,11 @@ The project focuses on building **dynamic UI**, **state management**, and **user
 ---
 
 
+
+
 # 🔗 Live Demo
 
-```
-Live Link: a06-juhairul-b13.netlify.app
-```
+Live Link: ```a06-juhairul-b13.netlify.app```
+
 
 ---
-
-
-# 👨‍💻 Author
-
-**Juhairul Islam**
-Frontend Developer | React Learner | UI Enthusiast
-
----
-
-
->
