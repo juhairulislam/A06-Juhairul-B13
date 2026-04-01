@@ -10,7 +10,7 @@ const PremiumCard = ({data,carts, setCarts}) => {
 
     const clickBuy=(data)=>{
 
-        setIsBuy(isBuy === false);
+        setIsBuy(false);
         
         const isDubble = carts.find(item => item.id === data.id ) ;
         
@@ -55,7 +55,7 @@ const PremiumCard = ({data,carts, setCarts}) => {
                         </p>)
                     }
 
-                    <button onClick={() => clickBuy(data)}  className='btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] h-8 text-white rounded-xl p-5 font-semibold text-[15px] my-4'>Buy Now</button>
+                    <button onClick={() => clickBuy(data)}  className={`${isBuy?'bg-linear-to-r from-[#4F39F6]  to-[#9514FA]  text-white':'bg-green-400 text-white'} h-8 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl w-full  rounded-xl p-5 font-semibold text-[15px] my-4`}>{isBuy?"Buy Now":"Added To cart"}</button>
 
 
                 </div>
