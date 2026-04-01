@@ -8,18 +8,18 @@ const Navbar = ({carts}) => {
 
             <div className='w-[10px'>
 
-                <p className='text-3xl font-extrabold bg-linear-to-r from-[#4F39F6]  to-[#9514FA] bg-clip-text text-transparent'>DigiTools</p>
+                <p className='text-xl lg:text-3xl font-extrabold bg-linear-to-r from-[#4F39F6]  to-[#9514FA] bg-clip-text text-transparent'>DigiTools</p>
             </div>
 
 
 
 
-            <div className='flex flex-col md:flex-row items-center text-[15px] font-medium text gap-4 '>
-                <p className='hover:bg-zinc-300 cursor-pointer'>Products</p>
-                <p className='hover:bg-zinc-300 cursor-pointer'>Features</p>
-                <p className='hover:bg-zinc-300 cursor-pointer'>Pricing</p>
-                <p className='hover:bg-zinc-300 cursor-pointer'>Testimonials</p>
-                <p className='hover:bg-zinc-300 cursor-pointer'>FAQ</p>
+            <div className='flex flex-col md:flex-row items-center text-[13px] lg:text-[15px] font-medium text gap-3 Lg:gap-4 '>
+                <p className='hover:bg-zinc-300 cursor-pointer '>Products</p>
+                <p className='hover:bg-zinc-300 cursor-pointer '>Features</p>
+                <p className='hover:bg-zinc-300 cursor-pointer '>Pricing</p>
+                <p className='hover:bg-zinc-300 cursor-pointer '>Testimonials</p>
+                <p className='hover:bg-zinc-300 cursor-pointer '>FAQ</p>
 
 
 
@@ -33,7 +33,7 @@ const Navbar = ({carts}) => {
               </div>
                
                 <p className='cursor-pointer'> Login</p>
-                <button className='cursor-pointer rounded-3xl text-white bg-linear-to-r from-[#4F39F6]  to-[#9514FA] p-2 font-semibold '>Get Started</button>
+                <button className='cursor-pointer rounded-3xl text-white bg-linear-to-r from-[#4F39F6]  to-[#9514FA] p-2 font-semibold text-[12px] lg:text-[15px]'>Get Started</button>
             </div>
 
 

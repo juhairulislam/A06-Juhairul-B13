@@ -40,7 +40,7 @@ const Pricing = () => {
 
                         <div>
 
-                            <button className='rounded-4xl w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] text-white p-2 mt-10 font-semibold'>
+                            <button className='cursor-pointer rounded-4xl w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] text-white p-2 mt-10 font-semibold'>
                                 Get Started Free
                             </button>
 
@@ -82,7 +82,7 @@ const Pricing = () => {
 
                         <div>
 
-                            <button className='rounded-4xl w-full bg-white mt-8 p-2 font-semibold'>
+                            <button className='cursor-pointer rounded-4xl w-full bg-white mt-8 p-2 font-semibold'>
                                <span className='bg-linear-to-r from-[#4F39F6]  to-[#9514FA] bg-clip-text text-transparent'>Start Pro Trial</span> 
                             </button>
 
@@ -119,7 +119,7 @@ const Pricing = () => {
 
                         <div>
 
-                            <button className='rounded-4xl w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] text-white p-2 mt-4 font-semibold'>
+                            <button className='cursor-pointer rounded-4xl w-full bg-linear-to-r from-[#4F39F6]  to-[#9514FA] text-white p-2 mt-4 font-semibold'>
                                 Contact Sales
                             </button>
 

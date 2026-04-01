@@ -23,8 +23,8 @@ const Banner = () => {
                 </p>
 
                 <div className='flex gap-4 justify-center md:justify-start'>
-                    <button  className='cursor-pointer rounded-4xl text-white bg-linear-to-r from-[#4F39F6]  to-[#9514FA] px-1.5 md:px-3 py-2'>Explore Products</button>
-                    <button className='rounded-4xl flex items-center gap-2 border-1 border-[#9514FA] px-1.5 md:px-3 py-2 bg-linear-to-r from-[#4F39F6]  to-[#9514FA] bg-clip-text text-transparent'><img src={img2}  /> Watch Demo</button>
+                    <button  className='cursor-pointer rounded-4xl text-white bg-linear-to-r from-[#4F39F6]  to-[#9514FA] px-1.5 lg:px-3 py-2 '>Explore Products</button>
+                    <button className='rounded-4xl flex items-center gap-1 lg:gap-2 border-1 border-[#9514FA] px-1.5 lg:px-3 py-2 bg-linear-to-r from-[#4F39F6]  to-[#9514FA] bg-clip-text text-transparent cursor-pointer'><img src={img2}  /> Watch Demo</button>
 
                 </div>
 
