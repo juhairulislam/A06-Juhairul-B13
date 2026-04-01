@@ -4,7 +4,7 @@ import {  toast } from 'react-toastify';
 const Cart = ({carts,setCarts }) => {
 
 
-    const totalPrice = carts.reduce((sum,item) => sum+ Number(item.price),0) ;
+    const totalPrice = carts.reduce((sum,item) => sum +Number(item.price),0) ;
     // console.log(totalPrice)
 
     // const allData = use(promise);
@@ -47,7 +47,7 @@ const Cart = ({carts,setCarts }) => {
                             </div>
                             <div className='pt-2'>
                                 <h1 className='text-[13px] md:text-xl font-semibold mb-1'>{cart.name}</h1>
-                                <p className='text-[14px] text-[#627382]'>{cart.price}</p>
+                                <p className='text-[14px] text-[#627382]'>$ {cart.price}</p>
                             </div>
 
                         </div>
